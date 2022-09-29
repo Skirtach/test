@@ -35,10 +35,14 @@ btn.addEventListener('click', (e)=>{
         input.value = '';
         const checkbox = task.querySelector(".checkbox_task");
         checkbox.addEventListener('change', ()=>{
+            const cross = task.querySelector('.task__title')
             if(checkbox.checked){
-                const cross = task.querySelector('.task__title')
-                cross.classList.add('liner');
+                
+                cross.classList.add('liner');       
+            } else {      
+                cross.classList.remove('liner');
             }
+            
         })
 
         completed.addEventListener('click', (e)=>{
@@ -46,7 +50,8 @@ btn.addEventListener('click', (e)=>{
             if(!checkbox.checked) {
                 task.classList.add('hidden')
             } else {
-                task.classList.remove('hidden');    
+                task.classList.remove('hidden');
+                  
             }
         })
 
@@ -59,7 +64,8 @@ btn.addEventListener('click', (e)=>{
                task.classList.add('hidden');
             }
             else {
-                task.classList.remove('hidden'); 
+                task.classList.remove('hidden');
+                
             }
         })
 
