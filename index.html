@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/task.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+           ToDo list
+        </h1>
+    </header>
+    <main class="content">
+        <div class="card">
+            <div class="tasks" id="tasks">
+                <div class="filter">
+                   <button class="tasks__addid" id="tasks__completed">Выполненые</button>
+                   <button class="tasks__addid" id="tasks__activ">Активные</button>
+                   <button class="tasks__addid" id="tasks__all">Все</button>
+                </div>
+                </div>
+                    <form class="tasks__control" id="tasks__form">
+                       <input type="text" class="tasks__input" id="task__input" placeholder="Введите название новой задачи">
+                       <button class="tasks__add" id="tasks__add">Добавить</button>        
+                </form>
+                <div class="tasks__list" id="tasks__list">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="task.js"></script>
+</body>
+</html>

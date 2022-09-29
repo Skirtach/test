@@ -1,0 +1,132 @@
+
+@media (max-width:640px) {
+  div.card {
+    width: 100%; 
+  }
+  button.tasks__addid {
+    margin: 4px;
+  }
+  button.tasks__add {
+    width: 40%;
+  } 
+  main.content {
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 1100px) {
+  button.tasks__add {
+    margin-left: 10px;
+  }
+  div.filter {
+    flex-wrap: wrap;
+  }
+  main.content {
+    min-width: 80%;
+  }
+
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.tasks__control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks__input {
+  display: block;
+  width: 80%;
+  padding: 10px 20px;
+  font-family: Golos, Arial, sans-serif;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+}
+
+.tasks__add {
+  font-family: Golos, Arial, sans-serif;
+  color: #fff;
+  background-color: #06f;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 8px 32px;
+  text-align: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  font-weight: 500;
+  box-shadow: none;
+}
+.filter {
+ display: flex;
+ justify-content: center;
+}
+.tasks__addid {
+  font-family: Golos, Arial, sans-serif;
+  color: #fff;
+  background-color: #06f;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+ 
+  outline: none;
+  padding: 8px 12px;
+  text-align: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  font-weight: 500;
+  box-shadow: none;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.tasks__list {
+  margin-top: 10px;
+}
+
+.task__title {
+  flex-grow: 1;
+  padding: 10px 5px;
+}
+
+.task__remove {
+  color: red;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.liner {
+  text-decoration: line-through;
+	text-decoration-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
